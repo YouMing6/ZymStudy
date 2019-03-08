@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shop/shop",
+    "pages/maps/maps"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4d99f9",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#09BB07",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "小文章",
+        "iconPath": "pages/img/icon_API.png",
+        "selectedIconPath": "pages/img/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/maps/maps",
+        "text": "小地图",
+        "iconPath": "pages/img/icon_component.png",
+        "selectedIconPath": "pages/img/icon_component_HL.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "小祝福",
+        "iconPath": "pages/img/icon_component.png",
+        "selectedIconPath": "pages/img/icon_component_HL.png"
+      }
+      
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+ 
+}

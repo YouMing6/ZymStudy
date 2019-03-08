@@ -1,0 +1,139 @@
+<!--pages/index/index.wxml-->
+<view class='body'>
+  <!-- 文字滚动 -->
+  <view class='marquee'> 
+    <image class='marquee-icon' src='../img/laba.png' ></image>
+    <view class='marquee-text'>
+    <text class='animation' animation = "{{animationData}}"> {{announcementText}}
+    </text> 
+    </view>
+    <image class='stop' src='../img/stop.png' bindtap='stop'></image>
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+ autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='lunbo' circular='ture'>
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <navigator url='{{item.link}}'>
+        <swiper-item >
+          <image src="{{item.url}}" class="slide-image"  />
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+
+  <!-- 图文列表 -->
+  <view class='list'>
+    <view class='list1'>
+      <view class= 'top'>生活随笔</view>
+      <!-- <navigator class='more'>more>></navigator> -->
+    </view>
+    <view class='box'>
+      
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552025864701&di=a44838fb422d24e30df052d284fb2fb2&imgtype=0&src=http%3A%2F%2Fp3.pstatp.com%2Flarge%2Fpgc-image%2F1523916230127e3b2f01f34' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>莫名的感到</view>
+        </navigator>
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552025933656&di=5e97c441c96d07749a32bfae6b4931bd&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_gif%2FKdAStmiazbn8o2ynw5Zb33VfvJUKV4iaJ3oIYlGOZYgXHSteTNV5FticcaokTldCkKHOXkNf56FL9leHsIrSDch1w%2F640%3Fwx_fmt%3Dgif' class='box-top-img' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>因为遇见你</view>
+        </navigator>
+ 
+    </view>
+  </view>
+
+  <view class='list'>
+    <view class= 'top'>励志文章</view>
+    <view class='box'>
+      
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552025684897&di=ab301205775858a4cfb28b127a86960d&imgtype=0&src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fa1%2F24%2Fd%2F142.jpg' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>退后，只为更好...</view>
+        </navigator>
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552025933715&di=0c26959848ac6fd3cf5ca78f3bffdbd6&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201701%2F15%2F20170115140739_e5rTu.gif' class='box-top-img' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>每天都是新开始...</view>
+        </navigator>
+ 
+    </view>
+  </view>
+
+  <view class='list'>
+    <view class= 'top'>故事汇</view>
+    <view class='box'>
+      
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://b.bdstatic.com/boxlib/20190307/2019030717502164113722182.jpg' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>江疏影满满少女心 素颜现身甜美微笑亲和迷人</view>
+        </navigator>
+        <navigator class='box-list' url='../logs/logs'>    
+            <view class='box-top'>
+              <image src='https://b.bdstatic.com/boxlib/20190307/2019030717502095013713464.jpg' class='box-top-img' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>迪丽热巴封面大片曝光 变身摩登女郎气质十足</view>
+        </navigator>
+    </view>
+    <view class='box'>
+        <navigator class='box-list'>    
+            <view class='box-top'>
+              <image src='https://inews.gtimg.com/newsapp_bt/0/7319876300/641' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>群星闪耀2019 FEIA中国时尚文化消费投资影响力论坛</view>
+        </navigator>
+        <navigator class='box-list'>    
+            <view class='box-top'>
+              <image src='https://img1.gtimg.com/fashion/pics/hv1/253/243/2302/149749768.jpg' class='box-top-img' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>李宇春黑科技1.5吨吴亦凡全红LOOK 错过这100小时就看不到了！</view>
+        </navigator>
+    </view>
+    <view class='box'> 
+        <navigator class='box-list'>    
+            <view class='box-top'>
+              <image src='https://inews.gtimg.com/newsapp_match/0/8020549372/0' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>新《倚天》“周芷若”终于上线</view>
+        </navigator>
+        <navigator class='box-list'>    
+            <view class='box-top'>
+              <image src='https://inews.gtimg.com/newsapp_bt/0/6980808182/1000' class='box-top-img' class='box-top-img'></image>
+            </view>
+            <view class='box-bootom'>2018，我的十佳电影</view>
+        </navigator>
+
+    </view>
+   
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+  <view class='footer'>图片来自网络，如有侵权必删</view>
+
+
+</view>
+
+
+
+
+
+
+

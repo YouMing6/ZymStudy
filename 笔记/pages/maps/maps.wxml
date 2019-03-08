@@ -1,0 +1,26 @@
+<!--pages/maps/maps.wxml-->
+<view class='main'> 
+  <map
+    id='imap'
+    class='maps'
+    subkey='DEQBZ-F4TCJ-GNBFN-FBOEL-UVZAS-TBF4D'
+    show-location
+    show-compass 
+    enable-3D 
+    markers='{{markers}}'
+
+    
+  >
+<cover-view class='zuobiao'>
+  {{latitude}},{{longitude}}
+</cover-view>
+<cover-view class='btn1' bindtap='getLocation'>
+    <cover-image src='../img/dingwei.png'></cover-image>
+</cover-view>
+<cover-view class='btn2' bindtap='showmodel'>
+  <cover-image src='../img/luxian.png'></cover-image>
+</cover-view>
+ 
+  </map>
+</view>
+
