@@ -1,0 +1,35 @@
+/*logs.wxss*/
+.top{
+  width: 100%;
+}
+.page{
+  width: 100%;
+  padding-bottom:25rpx; 
+  margin-top:-9px;
+  padding-top:18rpx; 
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1552017989&di=5689f0590c38d5c637acd31d78d87f67&src=http://attach.bbs.miui.com/forum/201105/05/2331428ygoqjpjwhwo7hzw.jpg');background-size: 100% 100% ;
+  display: flex;
+
+  flex-direction: column;
+}
+.h1{
+  color:#e64340;
+  font-size: 76rpx;
+  text-align: center;
+  background-color: rgba(255,215,0,0.5)
+}
+.h2{
+  color: #576b95;
+  font-size: 34rpx;
+  margin: 15rpx auto 15rpx auto;
+
+  width: 90%;
+  border-bottom: 1px solid #fff;
+}
+.txt{
+  color:#09bb07;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 42rpx;
+  font-weight: 600;
+}

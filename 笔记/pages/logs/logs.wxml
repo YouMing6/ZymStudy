@@ -1,0 +1,46 @@
+<!--logs.wxml-->
+<!-- <view class='page'> -->
+  <!-- <view class='weui-article'>
+    <view class="weui-article__h1">
+      1、屏幕自适应问题
+    </view>
+    <text > 
+    1、关于盒子居中的问题：
+      （1）浮动和定位
+          float: left; 
+          position: relative;
+      （2）CSS3新特性，配合使用
+          disply：flex；
+          justify-content: center;
+          align-content: center;
+          注意：如果使用了position: absolute 真机上水平垂直居中会不正常
+      （3）view嵌套view
+          margin设置auto，居中
+    2、关于图片真机不显示的问题：
+      图片的名字不能是中文
+    3、json文件配置 多了个逗号会报错
+    4、模块化
+      const name = require('路径');
+    
+    </text>
+  </view> -->
+<!-- </view> --> 
+<image class='top' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552025216012&di=1bd00c22493b2048cbc12a24a5c21429&imgtype=0&src=http%3A%2F%2Fimg.besoo.com%2Ffile%2F201807%2F17%2F5q5la5t3avw.jpg'></image>
+
+
+<view class='page'>
+  <label class='h1'>{{h1}}</label>
+  <label class='h2'>{{h2}}</label>
+  <text class='txt' space="emsp">{{txt1}}</text>
+  <text class='txt' space="emsp">{{txt2}}</text>
+  <text class='txt' space="emsp">{{txt3}}</text>
+  <text class='txt' space="emsp">{{txt4}}</text>
+  <text class='txt' space="emsp">{{txt5}}</text>
+</view>
+
+
+
+
+
+
+
