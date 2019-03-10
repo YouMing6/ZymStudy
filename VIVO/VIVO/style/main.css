@@ -1,0 +1,206 @@
+*{margin: 0px;padding: 0px;}
+a{text-decoration: none;margin:0px 28px; color: #fff; font-size: 16px; }
+.nav{
+	width: 100%;
+	height: 48px;
+	background: #353535;
+}
+.include{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+}
+.nav-left{
+	width: 280px;
+	height: 103px;
+	display: flex;
+	margin-right: 20px;
+}
+.nav-left img{
+	width: 103px;
+	height: 103px;
+}
+.nav-left h2{
+	font-size: 22px;
+	font-family: "微软雅黑";
+	font-weight: 500;
+	color: #fff;
+	display: inline-block;
+	margin:8px 20px 0px 16px;
+}
+.nav-mid{
+	list-style: none;/*去除li标签前面的点*/
+	height: 48px;
+	display: flex;
+	left: 35%;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.nav-mid li{transition: 0.5s ease;}
+.nav-mid li:hover{
+	/*transform: scale(1.2);*/
+}
+.nav-mid li a:hover{
+	color: rgba(30,144,255,1);
+}
+.nav-right{
+	width: 280px;
+	height: 48px;
+	/*display: flex;
+	justify-content: center;/*水平居中
+	align-items: center;/*垂直居中*/
+}
+.nav-right a {
+	display: inline-block;
+	margin: 14px 5px 0px 180px;
+	font-size: 14px;
+	color: rgba(255,255,255,0.8); 
+}
+.nav-right a:hover {
+	color: rgba(30,144,255,0.9);
+}
+.context{
+	width: 100%;
+	height: 500px;
+	background:url("../img/banner.png") no-repeat;
+	background-size: auto 500px;
+	text-align: center;
+	background-position: 50%;
+	display: flex;
+	align-items: center;
+}
+.box{
+	width: 580px;
+	height: 190px;
+	margin: 0px auto;
+	border: 1px solid rgba(255,255,255,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	overflow: hidden;	
+}
+.next{
+	color: #a6bee2;
+	width: 566px;
+	height: 176px;
+	background: rgba(88,184,238,0.1);
+
+	}
+.next h1{
+	font-size: 55px;
+	font-weight: 500;
+	margin: 20px;
+}
+.next p{
+	font-size: 24px;
+	font-weight: 350;
+	letter-spacing: 3px;
+
+}
+
+.advan{
+	width: 50%;
+	height: 150px;
+	padding:50px 0px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.8;
+}
+.advan h1{
+	margin-bottom: 10px;
+	font-weight: 450;
+}
+.advan p{
+	
+	font-size: 18px;
+}
+
+.list{
+	width: 94%;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	
+}
+.list-li{
+	width: 25%;
+	height: 160px;
+	margin: 0 3%;
+	text-align: center;
+	
+}
+.rows{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.5 ease;
+}
+.rows img{
+	margin: 45px 0px  10px 0px;
+
+}
+.rows img:hover{
+
+	transform: scale(0.8);
+}
+
+.rows1{
+	
+	background-color: rgb(124, 185, 255); 
+	box-shadow: rgb(169, 209, 255) 1px 2px 6px 0px;
+	
+}
+.rows2{
+	
+	background-color: rgb(255, 142, 164); 
+	box-shadow: rgb(169, 209, 255) 1px 2px 6px 0px;
+	
+}
+.rows3{
+	
+	background-color: rgb(119, 228, 160); 
+	box-shadow: rgb(169, 209, 255) 1px 2px 6px 0px;
+	
+}
+.rows4{
+	
+	background-color: rgb(207, 143, 232); 
+	box-shadow: rgb(169, 209, 255) 1px 2px 6px 0px;
+	
+}
+.list-li p{
+	margin-top: 15px;
+	font-size: 17px;
+	color: #666;
+
+}
+
+.footer{
+	width: 100%;
+	height: 100px;
+	background-color: #353535;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dome{
+	width: 90%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.dome a{
+	color: rgba(255,255,255,0.5);
+}
+.dome a:hover {
+	color: rgba(30,144,255,1);
+}
