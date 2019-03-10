@@ -1,0 +1,63 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	font-family: "楷体";
+	background:url('http://hk.best-wallpaper.net/wallpaper/2880x1800/1707/Auckland-New-Zealand-sea-bay-city-skyscrapers-night_2880x1800.jpg') no-repeat ;
+	background-size:100%;
+
+	/*控制里面那个盒子水平垂直居中*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.context{
+	width: 50%;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:5%;
+	padding: 65px 50px;
+	
+}
+.title{
+	display: inline-block;
+	margin: 15px 0px;
+	letter-spacing: 5px;/*字体间距*/
+}
+.title-h{
+	font-size: 48px;
+	text-shadow: 1px 1px 1px #aaa;
+}
+.title-h span{
+	font-family: 'Courier New', Courier, monospace;
+	font-size:72px;
+	}
+.title-p{
+	line-height: 1.5;
+	letter-spacing: 2px;/*字体间距*/
+}
+.button{
+	margin-top: 15px;
+	display: inline-block;
+	width: 125px;
+	height: 40px;
+	border: 2px solid ;
+	font-weight: bolder;
+	text-decoration: none;
+	border-radius: 15px;
+	line-height: 40px;
+	color: rgba(255,64,64,1);
+	font-size: 21px;
+	transition: 0.5s ;
+	animation: myone linear 2s infinite alternate;
+	
+}
+
+@keyframes myone{
+	0%   {border-color: rgba(0,0,255,0.1); color: rgba(0,0,255,0.1);}
+	100% {border-color: rgba(0,0,255,1); color: rgba(0,0,255,1);}
+}
+
